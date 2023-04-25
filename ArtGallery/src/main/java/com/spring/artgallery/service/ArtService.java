@@ -25,4 +25,16 @@ public class ArtService {
 		return obj;
 	}
 	
+	public artgallery update(artgallery a) {
+		artgallery obj=aRepo.save(a);
+		return obj;
+	}
+	
+	public void delete(int id) {
+		aRepo.deleteById(id);
+	}
+	public artgallery get(int id) {
+		artgallery obj=aRepo.findById(id).get();
+		return obj;
+	}
 }
