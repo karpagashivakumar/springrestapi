@@ -44,5 +44,27 @@ public class ArtController {
 	public artgallery get(@PathVariable("id") int id) {
 		return aService.get(id);
 	}
+	@GetMapping("/sorting/{field}")
+	public List<artgallery>sort (@PathVariable String field)
+	{
+		return aService.sort(field);
+	}
+	
+	//paging
+	
+	@GetMapping("/pagingLaptops/{offset}/{pageSize}")
+	 public List<artgallery>paginglaptop(@PathVariable int offset,@PathVariable int pageSize) 
+	 {
+		 return aService.Paging(offset,pageSize);
+	 }
+	 
+	 //paging&&sorting
+	
+	 @GetMapping("/pagingSortingLaptop/{offset}/{pageSize}/{field}")
+	  public List<artgallery>pagingSortingLaptop(@PathVariable int offset,@PathVariable int pageSize,@PathVariable String field) 
+	  {
+		 return aService.pagingSorting(offset,pageSize,field);
+	  }
+
 	
 }
