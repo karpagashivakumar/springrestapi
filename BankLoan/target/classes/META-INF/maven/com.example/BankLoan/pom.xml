@@ -8,11 +8,7 @@
 		<version>3.0.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-<<<<<<< HEAD
-	<groupId>com.example.loan</groupId>
-=======
 	<groupId>com.example</groupId>
->>>>>>> c680ee4725a5576a80716b25fcc5a5790da9570b
 	<artifactId>BankLoan</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>BankLoan</name>
@@ -35,16 +31,10 @@
 		</dependency>
 
 		<dependency>
-<<<<<<< HEAD
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-=======
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
->>>>>>> c680ee4725a5576a80716b25fcc5a5790da9570b
 		</dependency>
 		<dependency>
 			<groupId>com.mysql</groupId>
